@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding:0;
+}
+body,html{
+    height: 100%;
+    width: 100%
+}
+a{
+    text-decoration: none;
+    color: #ddd;
+}
+@font-face {
+    font-family: 'iconfont';
+    src: url('../font/iconfont.eot');
+    src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'),
+    url('../font/iconfont.woff') format('woff'),
+    url('../font/iconfont.ttf') format('truetype'),
+    url('../font/iconfont.svg#iconfont') format('svg');
+}
+.iconfont{
+    font-family:"iconfont" !important;
+    font-size:30px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/*content start*/
+
+/*photo start*/
+#photo{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background: url("../img/373H.jpg") no-repeat center/cover;
+    /*background-position:center ;图片居中*/
+    /*background-size: cover;图片覆盖*/
+}
+/*photo end*/
+
+.content{
+    position: absolute;
+    width: 100%;
+    height:100%;
+    top:0;
+    left:0;
+    bottom: 0;
+    right: 0;
+}
+#outer{
+    width: 100%;
+    height:100%;
+    background-color: #b0b0b0;
+    opacity: 0.31;
+    
+}
+
+.header-photo{
+    position: absolute;
+    margin: 0 auto;
+    left:50%;
+    transform: translateX(-50%);
+    top:15%;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: url("../img/header-photo.jpg") no-repeat center/cover;
+}
+
+/*article start*/
+.essay{
+    position: absolute;
+    bottom: 35%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 412px;
+    text-align: center;
+}
+strong{
+    color: white;
+    font-size: 23px;
+}
+p{
+    font-size: 17px;
+    color: #dddddd;
+}
+
+/*article end*/
+
+/*icon start*/
+.icon{
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    text-align: center;
+    color: #dddddd;
+    max-width: 900px;
+}
+
+.iconfont{
+    margin-left: 8%;
+}
+.iconfont:hover{
+    cursor: pointer;
+    color: white;
+}
+@media (max-width:500px) {
+    .content .icon{
+        width: 206px;
+        margin: 0 auto;
+    }
+}
+/*icon end*/
+
+/*content end*/
